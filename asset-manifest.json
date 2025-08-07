@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/BlockCoinX/static/css/main.065f3367.css",
+    "main.js": "/BlockCoinX/static/js/main.1c50893e.js",
+    "static/css/620.b6a28263.chunk.css": "/BlockCoinX/static/css/620.b6a28263.chunk.css",
+    "static/js/620.da765111.chunk.js": "/BlockCoinX/static/js/620.da765111.chunk.js",
+    "static/css/231.269ff25c.chunk.css": "/BlockCoinX/static/css/231.269ff25c.chunk.css",
+    "static/js/231.91e649f7.chunk.js": "/BlockCoinX/static/js/231.91e649f7.chunk.js",
+    "static/css/349.10aef53a.chunk.css": "/BlockCoinX/static/css/349.10aef53a.chunk.css",
+    "static/js/349.b048be1e.chunk.js": "/BlockCoinX/static/js/349.b048be1e.chunk.js",
+    "static/css/245.aecbe346.chunk.css": "/BlockCoinX/static/css/245.aecbe346.chunk.css",
+    "static/js/245.84aad6f2.chunk.js": "/BlockCoinX/static/js/245.84aad6f2.chunk.js",
+    "static/css/626.99b3982a.chunk.css": "/BlockCoinX/static/css/626.99b3982a.chunk.css",
+    "static/js/626.94b859b5.chunk.js": "/BlockCoinX/static/js/626.94b859b5.chunk.js",
+    "static/css/754.afbe21b7.chunk.css": "/BlockCoinX/static/css/754.afbe21b7.chunk.css",
+    "static/js/754.fc96587b.chunk.js": "/BlockCoinX/static/js/754.fc96587b.chunk.js",
+    "static/media/3d-rendering-blockchain-technology.jpg": "/BlockCoinX/static/media/3d-rendering-blockchain-technology.424de639ea0985b22abd.jpg",
+    "index.html": "/BlockCoinX/index.html",
+    "main.065f3367.css.map": "/BlockCoinX/static/css/main.065f3367.css.map",
+    "main.1c50893e.js.map": "/BlockCoinX/static/js/main.1c50893e.js.map",
+    "620.b6a28263.chunk.css.map": "/BlockCoinX/static/css/620.b6a28263.chunk.css.map",
+    "620.da765111.chunk.js.map": "/BlockCoinX/static/js/620.da765111.chunk.js.map",
+    "231.269ff25c.chunk.css.map": "/BlockCoinX/static/css/231.269ff25c.chunk.css.map",
+    "231.91e649f7.chunk.js.map": "/BlockCoinX/static/js/231.91e649f7.chunk.js.map",
+    "349.10aef53a.chunk.css.map": "/BlockCoinX/static/css/349.10aef53a.chunk.css.map",
+    "349.b048be1e.chunk.js.map": "/BlockCoinX/static/js/349.b048be1e.chunk.js.map",
+    "245.aecbe346.chunk.css.map": "/BlockCoinX/static/css/245.aecbe346.chunk.css.map",
+    "245.84aad6f2.chunk.js.map": "/BlockCoinX/static/js/245.84aad6f2.chunk.js.map",
+    "626.99b3982a.chunk.css.map": "/BlockCoinX/static/css/626.99b3982a.chunk.css.map",
+    "626.94b859b5.chunk.js.map": "/BlockCoinX/static/js/626.94b859b5.chunk.js.map",
+    "754.afbe21b7.chunk.css.map": "/BlockCoinX/static/css/754.afbe21b7.chunk.css.map",
+    "754.fc96587b.chunk.js.map": "/BlockCoinX/static/js/754.fc96587b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.065f3367.css",
+    "static/js/main.1c50893e.js"
+  ]
+}

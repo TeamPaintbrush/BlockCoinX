@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # BlockCoinX Clone with AI Integration
 
 A modern cryptocurrency trading platform clone built with React, featuring AI-powered tools using OpenAI's GPT-4 Vision and DALL-E 3.

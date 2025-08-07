@@ -1,0 +1,134 @@
+.faq {
+  background: #0A1220;
+  padding: 100px 0;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 24px;
+  line-height: 1.2;
+}
+
+.description {
+  font-size: 1.1rem;
+  color: #B3C5D1;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.faqList {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.faqItem {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.faqItem:last-child {
+  border-bottom: none;
+}
+
+.faqQuestion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.faqQuestion:hover {
+  color: #00D395;
+}
+
+.questionText {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #fff;
+  line-height: 1.4;
+  transition: color 0.3s ease;
+}
+
+.faqQuestion:hover .questionText {
+  color: #00D395;
+}
+
+.toggleIcon {
+  font-size: 1.5rem;
+  color: #B3C5D1;
+  font-weight: 300;
+  transition: all 0.3s ease;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.toggleIcon.open {
+  color: #00D395;
+  background: rgba(0, 211, 149, 0.1);
+  transform: rotate(180deg);
+}
+
+.faqAnswer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.faqAnswer.show {
+  max-height: 200px;
+  padding-bottom: 32px;
+}
+
+.answerContent {
+  font-size: 1rem;
+  color: #B3C5D1;
+  line-height: 1.6;
+  padding-right: 40px;
+}
+
+.faqItem.expanded {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 40px;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+  }
+  
+  .faqQuestion {
+    padding: 24px 0;
+  }
+  
+  .questionText {
+    font-size: 1.1rem;
+  }
+  
+  .answerContent {
+    padding-right: 20px;
+  }
+}

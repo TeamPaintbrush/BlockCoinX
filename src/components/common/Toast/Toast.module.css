@@ -1,0 +1,174 @@
+.toast {
+  background: rgba(14, 24, 44, 0.95);
+  backdrop-filter: blur(20px);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  padding: 16px;
+  transform: translateX(100%);
+  opacity: 0;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  min-height: 64px;
+}
+
+.toast.visible {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.toast.removing {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.toastContent {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.toastIcon {
+  font-size: 20px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.toastText {
+  flex: 1;
+  min-width: 0;
+}
+
+.toastTitle {
+  color: #e2e8f0;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.4;
+  margin-bottom: 4px;
+}
+
+.toastMessage {
+  color: #94a3b8;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.toastActions {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.actionButton {
+  background: transparent;
+  border: 1px solid #00D395;
+  color: #00D395;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.actionButton:hover {
+  background: #00D395;
+  color: white;
+}
+
+.closeButton {
+  background: transparent;
+  border: none;
+  color: #64748b;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 4px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 24px;
+  height: 24px;
+}
+
+.closeButton:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #e2e8f0;
+}
+
+.progressBar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #00D395, #00a877);
+  width: 100%;
+  transform-origin: left;
+  animation: progress linear;
+}
+
+@keyframes progress {
+  from {
+    transform: scaleX(1);
+  }
+  to {
+    transform: scaleX(0);
+  }
+}
+
+/* Toast type variants */
+.success {
+  border-left: 4px solid #10b981;
+}
+
+.error {
+  border-left: 4px solid #ef4444;
+}
+
+.warning {
+  border-left: 4px solid #f59e0b;
+}
+
+.info {
+  border-left: 4px solid #3b82f6;
+}
+
+.success .progressBar {
+  background: linear-gradient(90deg, #10b981, #059669);
+}
+
+.error .progressBar {
+  background: linear-gradient(90deg, #ef4444, #dc2626);
+}
+
+.warning .progressBar {
+  background: linear-gradient(90deg, #f59e0b, #d97706);
+}
+
+.info .progressBar {
+  background: linear-gradient(90deg, #3b82f6, #2563eb);
+}
+
+/* Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .toast {
+    transition: opacity 0.2s ease;
+    transform: none;
+  }
+  
+  .toast.visible {
+    transform: none;
+  }
+  
+  .toast.removing {
+    transform: none;
+  }
+  
+  .progressBar {
+    animation: none;
+    display: none;
+  }
+}

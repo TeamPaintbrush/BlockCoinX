@@ -1,0 +1,17 @@
+
+.main-layout {
+  width: 100vw;
+  min-height: 100vh;
+  background: #0B1426;
+  color: #e2e8f0;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+main {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  flex: 1;
+}

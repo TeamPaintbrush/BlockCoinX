@@ -1,0 +1,81 @@
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    var(--skeleton-base, #1a2332) 0%,
+    var(--skeleton-highlight, #2a3441) 50%,
+    var(--skeleton-base, #1a2332) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite ease-in-out;
+  display: block;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* Respect user preferences for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .skeleton {
+    animation: none;
+    background: var(--skeleton-base, #1a2332);
+  }
+}
+
+/* Dark mode adjustments */
+[data-theme="light"] .skeleton {
+  --skeleton-base: #e2e8f0;
+  --skeleton-highlight: #f1f5f9;
+}
+
+[data-theme="dark"] .skeleton {
+  --skeleton-base: #1a2332;
+  --skeleton-highlight: #2a3441;
+}
+
+/* Variant-specific styles */
+.textContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.circular {
+  border-radius: 50% !important;
+}
+
+.rectangular {
+  border-radius: 8px;
+}
+
+.card {
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text {
+  margin-bottom: 4px;
+}
+
+.text:last-child {
+  margin-bottom: 0;
+}
+
+/* Improved animation for better accessibility */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    background-position: 200% 0;
+    opacity: 0.8;
+  }
+}

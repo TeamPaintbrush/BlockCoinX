@@ -1,0 +1,82 @@
+.cryptoCard {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 12px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.cryptoCard:hover {
+  background: rgba(255, 255, 255, 0.08);
+  transform: translateY(-1px);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.coinInfo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.coinIcon {
+  width: 32px;
+  height: 32px;
+  background: linear-gradient(135deg, #00D395, #00a877);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.coinDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.coinSymbol {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #fff;
+}
+
+.coinName {
+  font-size: 0.8rem;
+  color: #9ca3af;
+}
+
+.priceInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  font-weight: 600;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.change {
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.positive {
+  color: #00D395;
+}
+
+.negative {
+  color: #ef4444;
+}

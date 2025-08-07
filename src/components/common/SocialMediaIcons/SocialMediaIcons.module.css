@@ -1,0 +1,170 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.socialIcons {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.socialIcon {
+    width: 35.2px;
+    height: 35.2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    transition: transform 0.2s ease;
+    overflow: hidden;
+}
+
+.socialIcon:hover {
+    transform: scale(1.1);
+}
+
+.iconImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.iconSkeleton {
+    width: 32px;
+    height: 32px;
+    background: linear-gradient(90deg, #1e293b 25%, #334155 50%, #1e293b 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+    border-radius: 6px;
+}
+
+.appSection {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.downloadTitle {
+    color: #e2e8f0;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.appBadges {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.appBadge {
+    display: block;
+    transition: transform 0.2s ease;
+}
+
+.appBadge:hover {
+    transform: scale(1.05);
+}
+
+.badgeImage {
+    width: 240px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.badgeSkeleton {
+    width: 120px;
+    height: 40px;
+    background: linear-gradient(90deg, #1e293b 25%, #334155 50%, #1e293b 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+    border-radius: 6px;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -200% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+.iconText {
+    color: #e2e8f0;
+    font-weight: bold;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.appBadgeFallback {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 6px;
+    padding: 6px 12px;
+    color: #e2e8f0;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+    width: 120px;
+    height: 40px;
+}
+
+.appBadgeFallback:hover {
+    transform: scale(1.05);
+}
+
+.playIcon,
+.appleIcon {
+    font-size: 16px;
+    color: #00D395;
+}
+
+.badgeText {
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    line-height: 1.2;
+}
+
+.getItOn {
+    color: #94a3b8;
+    font-size: 8px;
+}
+
+.storeName {
+    color: #e2e8f0;
+    font-weight: bold;
+    font-size: 11px;
+}
+@media (max-width: 768px) {
+    .socialIcons {
+        gap: 8px;
+    }
+    
+    .socialIcon {
+        width: 32px;
+        height: 32px;
+    }
+    
+    .iconSkeleton {
+        width: 28px;
+        height: 28px;
+    }
+    
+    .badgeImage {
+        width: 200px;
+        height: 64px;
+    }
+    
+    .badgeSkeleton {
+        width: 100px;
+        height: 32px;
+    }
+}

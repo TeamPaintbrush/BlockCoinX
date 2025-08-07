@@ -1,0 +1,99 @@
+/* Full-width background for Trading Chart section with gradient */
+.tradingChartSection {
+    width: 100vw;
+    background: radial-gradient(ellipse at 60% 40%, #1e293b 0%, #0A1220 70%);
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    position: relative;
+    z-index: 1;
+}
+
+.tradingChart {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 60px 40px;
+    background: none;
+}
+
+.chartContainer {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    padding: 24px;
+}
+
+.chartHeader {
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.chartTitle {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    margin: 0 0 8px 0;
+}
+
+.chartSubtitle {
+    color: #B3C5D1;
+    font-size: 1rem;
+}
+
+.chartContent {
+    width: 100%;
+}
+
+.statRow {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.statBox {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.statBox:hover {
+    border-color: #00D395;
+    transform: translateY(-2px);
+}
+
+.statLabel {
+    display: block;
+    font-size: 0.9rem;
+    color: #B3C5D1;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.statValue {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #00D395;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .tradingChart {
+        padding: 40px 20px;
+    }
+    
+    .statRow {
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    .chartTitle {
+        font-size: 1.5rem;
+    }
+}

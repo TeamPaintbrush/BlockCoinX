@@ -1,0 +1,51 @@
+.cryptoCard {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 16px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.coinInfo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+}
+
+.coinIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--skeleton-base, #1a2332);
+  flex-shrink: 0;
+}
+
+.coinDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.priceInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: flex-end;
+}
+
+/* Dark mode adjustments */
+[data-theme="light"] .cryptoCard {
+  background: rgba(0, 0, 0, 0.02);
+  border-color: rgba(0, 0, 0, 0.05);
+}

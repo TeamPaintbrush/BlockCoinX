@@ -1,0 +1,36 @@
+:root {
+    --primary-color: #00D395;
+    --secondary-color: #FF5722;
+    --background-color: #0B1426;
+    --text-color: #e2e8f0;
+    --border-color: #334155;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Arial', sans-serif;
+}
+
+.header {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.footer {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: darken(var(--primary-color), 10%);
+}
